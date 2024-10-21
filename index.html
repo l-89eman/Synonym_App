@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synonym_App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="word-app-wrapper">
+        <div class="container word-app-header-content">
+          <h2 class="word-app-header-title">
+            <i class="fas fa-search"></i>
+            <span>Word Find</span>
+          </h2>
+          <a
+            href="https://www.datamuse.com/api/"
+            class="word-app-header-link"
+            target="_blank"
+          >
+            Api Homepage</a
+          >
+        </div>
+      </div>
+      <div class="word-app-searchbox">
+        <div class="container word-app-searchbox-content">
+          <form id="word-search-form">
+            <div class="form-element">
+              <span class="form-icon">
+                <i class="fa-solid fa-pen-nib"></i>
+              </span>
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Enter Your word to find synonyms"
+                name="search_word"
+              />
+              <button type="submit" id="submit-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="spinner">
+        <img src="spinner.svg" alt="" />
+      </div>
+      <div class="word-app-body">
+        <div class="container word-app-body-content">
+          <div id="word-list">
+            <!-- <span class="word-item">lorem</span>
+            <span class="word-item">lorem</span>
+            <span class="word-item">lorem</span>
+            <span class="word-item">lorem</span>
+            <span class="word-item">lorem</span
+            ><span class="word-item">lorem</span
+            ><span class="word-item">lorem</span
+            ><span class="word-item">lorem</span> -->
+          </div>
+          <button type="button" id="copy-btn">
+            <i class="fas fa-copy"></i>Copy
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
